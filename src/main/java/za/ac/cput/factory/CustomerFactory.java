@@ -5,7 +5,7 @@ import za.ac.cput.util.CustomerHelper;
 
 public class CustomerFactory {
     public static Customer buildCustomer(String firstName, String lastName, String phoneNumber, String email){
-        if(CustomerHelper.isNullOrEmpty(firstName) == true || CustomerHelper.isValidEmail(lastName) == true) {
+        if(CustomerHelper.isNullOrEmpty(firstName) == true || CustomerHelper.isNullOrEmpty(lastName) == true) {
             return null;
         }
 

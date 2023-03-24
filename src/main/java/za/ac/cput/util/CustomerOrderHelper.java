@@ -1,8 +1,13 @@
 package za.ac.cput.util;
 
-import org.apache.commons.validator.routines.DateValidator;
+/* CustomerOrderHelper.java
+Helper Class for the CustomerOrderFactory
+Author: David Henriques Garrancho (221475982)
+Date: 20 March 2023
+*/
 
-import java.text.*;
+import java.time.*;
+import java.time.format.*;
 import java.util.*;
 
 public class CustomerOrderHelper {
@@ -22,16 +27,32 @@ public class CustomerOrderHelper {
         return false;
     }
 
-    public static Date isValidDate(String dateStr, String dateFormat){
-        Date date = null;
-        DateFormat sdf = new SimpleDateFormat(dateFormat);
-        sdf.setLenient(false);
-        try{
-            date = sdf.parse(dateStr);
-        } catch (ParseException e) {
-            e.printStackTrace();
+    public static LocalDate isValidDate(String dateStr){
+        DateTimeFormatter formatter = new DateTimeFormatterBuilder()
+                .appendPattern("dd-MM-yyyy")
+                .toFormatter()
+                .withResolverStyle(ResolverStyle.STRICT);
+
+        try {
+            LocalDate date = LocalDate.parse(dateStr, formatter);
+
+            if(dateStr == "" || dateStr == null){
+                return null;
+            }
+
+            int dayOfMonth = date.getDayOfMonth();
+            if(dayOfMonth < 1 || dayOfMonth > date.getMonth().maxLength()) {
+                return null;
+            }
+
+            if (date.getDayOfMonth() == 29 && date.getMonth() == Month.FEBRUARY && !date.isLeapYear()) {
+                return null;
+            }
+
+            return date;
+        } catch (DateTimeParseException e) {
+            return null;
         }
-        return date;
     }
 
     public static String generateId(){

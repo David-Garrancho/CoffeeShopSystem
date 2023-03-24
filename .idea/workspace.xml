@@ -4,7 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6838f90a-ff98-434a-aa3e-75e9b725c61e" name="Changes" comment="Coffee System v0.0.3 - Helper and Factory&#10;&#10;All Factory and Helper classes have been updated to correct any invalid entries. All methods for validation are stored in the Helper classes. All building and restrictions to the entries are placed within the Factory classes." />
+    <list default="true" id="6838f90a-ff98-434a-aa3e-75e9b725c61e" name="Changes" comment="Testing&#10;&#10;All Repositories for Customer and CustomerOrder has been added. Also a base repository has been added.">
+      <change afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/domain/CustomerOrderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/domain/CustomerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/factory/CustomerFactoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/factory/CustomerOrderFactoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/interfaces/CustomerOrderRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/interfaces/CustomerRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/domain/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/domain/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/domain/CustomerOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/domain/CustomerOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/factory/CustomerFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/factory/CustomerFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/factory/CustomerOrderFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/factory/CustomerOrderFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/interfaces/CustomerOrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/interfaces/CustomerOrderRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/interfaces/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/interfaces/CustomerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/interfaces/InterfaceCustomerOrdersRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/interfaces/InterfaceCustomerOrdersRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/interfaces/InterfaceCustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/interfaces/InterfaceCustomerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/interfaces/InterfaceRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/interfaces/InterfaceRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/util/CustomerHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/util/CustomerHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/util/CustomerOrderHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/util/CustomerOrderHelper.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,6 +35,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -39,6 +60,7 @@
   <component name="ProjectId" id="2N8kJgqgPsyVH6HjEROwDdP9vHQ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
@@ -48,6 +70,8 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -59,6 +83,105 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="za.ac.cput.interfaces" />
+      <recent name="za.ac.cput.factory" />
+      <recent name="za.ac.cput.domain" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.CustomerOrderFactoryTest.createCustomerOrder">
+    <configuration name="CustomerFactoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CoffeeSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="za.ac.cput.factory.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="za.ac.cput.factory" />
+      <option name="MAIN_CLASS_NAME" value="za.ac.cput.factory.CustomerFactoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerFactoryTest.testEmptyParameter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CoffeeSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="za.ac.cput.factory.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="za.ac.cput.factory" />
+      <option name="MAIN_CLASS_NAME" value="za.ac.cput.factory.CustomerFactoryTest" />
+      <option name="METHOD_NAME" value="testEmptyParameter" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerOrderFactoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CoffeeSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="za.ac.cput.factory.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="za.ac.cput.factory" />
+      <option name="MAIN_CLASS_NAME" value="za.ac.cput.factory.CustomerOrderFactoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerOrderFactoryTest.createCustomerOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CoffeeSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="za.ac.cput.factory.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="za.ac.cput.factory" />
+      <option name="MAIN_CLASS_NAME" value="za.ac.cput.factory.CustomerOrderFactoryTest" />
+      <option name="METHOD_NAME" value="createCustomerOrder" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerOrderFactoryTest.testEmptyParameter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CoffeeSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="za.ac.cput.factory.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="za.ac.cput.factory" />
+      <option name="MAIN_CLASS_NAME" value="za.ac.cput.factory.CustomerOrderFactoryTest" />
+      <option name="METHOD_NAME" value="testEmptyParameter" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.CustomerOrderFactoryTest.createCustomerOrder" />
+        <item itemvalue="JUnit.CustomerOrderFactoryTest" />
+        <item itemvalue="JUnit.CustomerFactoryTest" />
+        <item itemvalue="JUnit.CustomerFactoryTest.testEmptyParameter" />
+        <item itemvalue="JUnit.CustomerOrderFactoryTest.testEmptyParameter" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -70,7 +193,15 @@
       <workItem from="1679053029997" duration="1911000" />
       <workItem from="1679297259054" duration="1520000" />
       <workItem from="1679303502539" duration="5162000" />
-      <workItem from="1679311908008" duration="4390000" />
+      <workItem from="1679311908008" duration="5063000" />
+      <workItem from="1679334403161" duration="753000" />
+      <workItem from="1679390942969" duration="9000" />
+      <workItem from="1679475120656" duration="5646000" />
+      <workItem from="1679483563817" duration="3511000" />
+      <workItem from="1679556428211" duration="9854000" />
+      <workItem from="1679566482535" duration="1838000" />
+      <workItem from="1679574165331" duration="62000" />
+      <workItem from="1679652733211" duration="163000" />
     </task>
     <task id="LOCAL-00001" summary="Coffee System v0.0.0 - Base code&#10;This is the Coffee System layout with just the main, xmls and folders to begin on development of our coffee system for 2023. Ensure all naming conventions are camelCase and that all files and additional folders are named correctly.">
       <created>1679055180959</created>
@@ -107,7 +238,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679324050465</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Coffee System v0.1.4 - Repository&#10;&#10;All Repositories for Customer and CustomerOrder has been added. Also a base repository has been added.">
+      <created>1679324519902</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1679324519902</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,6 +267,7 @@
     <MESSAGE value="Coffee System v0.0.1 - Base code&#10;&#10;Customer and CustomerOrder entities have been created using the correct Builder Pattern and attributes." />
     <MESSAGE value="This is all entities and relevant attributes along with builder patterns for the relevant entities." />
     <MESSAGE value="Coffee System v0.0.3 - Helper and Factory&#10;&#10;All Factory and Helper classes have been updated to correct any invalid entries. All methods for validation are stored in the Helper classes. All building and restrictions to the entries are placed within the Factory classes." />
-    <option name="LAST_COMMIT_MESSAGE" value="Coffee System v0.0.3 - Helper and Factory&#10;&#10;All Factory and Helper classes have been updated to correct any invalid entries. All methods for validation are stored in the Helper classes. All building and restrictions to the entries are placed within the Factory classes." />
+    <MESSAGE value="Coffee System v0.1.4 - Repository&#10;&#10;All Repositories for Customer and CustomerOrder has been added. Also a base repository has been added." />
+    <option name="LAST_COMMIT_MESSAGE" value="Coffee System v0.1.4 - Repository&#10;&#10;All Repositories for Customer and CustomerOrder has been added. Also a base repository has been added." />
   </component>
 </project>

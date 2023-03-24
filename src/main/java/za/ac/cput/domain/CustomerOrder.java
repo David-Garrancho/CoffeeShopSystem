@@ -1,6 +1,11 @@
 package za.ac.cput.domain;
 
-import java.util.Date;
+/* CustomerOrder.java
+Entity for the CustomerOrder
+Author: David Henriques Garrancho (221475982)
+Date: 20 March 2023
+*/
+
 import java.util.Objects;
 
 public class CustomerOrder {
