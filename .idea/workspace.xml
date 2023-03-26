@@ -5,25 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6838f90a-ff98-434a-aa3e-75e9b725c61e" name="Changes" comment="Testing&#10;&#10;All Repositories for Customer and CustomerOrder has been added. Also a base repository has been added.">
-      <change afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/domain/CustomerOrderTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/domain/CustomerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/factory/CustomerFactoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/factory/CustomerOrderFactoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/interfaces/CustomerOrderRepositoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/interfaces/CustomerRepositoryTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/domain/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/domain/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/domain/CustomerOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/domain/CustomerOrder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/factory/CustomerFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/factory/CustomerFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/factory/CustomerOrderFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/factory/CustomerOrderFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/interfaces/CustomerOrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/interfaces/CustomerOrderRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/interfaces/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/interfaces/CustomerRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/interfaces/InterfaceCustomerOrdersRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/interfaces/InterfaceCustomerOrdersRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/interfaces/InterfaceCustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/interfaces/InterfaceCustomerRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/interfaces/InterfaceRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/interfaces/InterfaceRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/util/CustomerHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/util/CustomerHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/util/CustomerOrderHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/util/CustomerOrderHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/za/ac/cput/factory/CustomerOrderFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/factory/CustomerOrderFactoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/za/ac/cput/interfaces/CustomerOrderRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/interfaces/CustomerOrderRepositoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,43 +75,12 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="za.ac.cput.interfaces" />
       <recent name="za.ac.cput.factory" />
+      <recent name="za.ac.cput.interfaces" />
       <recent name="za.ac.cput.domain" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CustomerOrderFactoryTest.createCustomerOrder">
-    <configuration name="CustomerFactoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CoffeeSystem" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="za.ac.cput.factory.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="za.ac.cput.factory" />
-      <option name="MAIN_CLASS_NAME" value="za.ac.cput.factory.CustomerFactoryTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CustomerFactoryTest.testEmptyParameter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CoffeeSystem" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="za.ac.cput.factory.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="za.ac.cput.factory" />
-      <option name="MAIN_CLASS_NAME" value="za.ac.cput.factory.CustomerFactoryTest" />
-      <option name="METHOD_NAME" value="testEmptyParameter" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.CustomerOrderRepositoryTest.c_update">
     <configuration name="CustomerOrderFactoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CoffeeSystem" />
       <extension name="coverage">
@@ -140,7 +96,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CustomerOrderFactoryTest.createCustomerOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CustomerOrderFactoryTest.testEmptyParameter3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CoffeeSystem" />
       <extension name="coverage">
         <pattern>
@@ -150,13 +106,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="za.ac.cput.factory" />
       <option name="MAIN_CLASS_NAME" value="za.ac.cput.factory.CustomerOrderFactoryTest" />
-      <option name="METHOD_NAME" value="createCustomerOrder" />
+      <option name="METHOD_NAME" value="testEmptyParameter3" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CustomerOrderFactoryTest.testEmptyParameter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CustomerOrderFactoryTest.testInvalidParameter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CoffeeSystem" />
       <extension name="coverage">
         <pattern>
@@ -166,7 +122,38 @@
       </extension>
       <option name="PACKAGE_NAME" value="za.ac.cput.factory" />
       <option name="MAIN_CLASS_NAME" value="za.ac.cput.factory.CustomerOrderFactoryTest" />
-      <option name="METHOD_NAME" value="testEmptyParameter" />
+      <option name="METHOD_NAME" value="testInvalidParameter" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerOrderRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CoffeeSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="za.ac.cput.interfaces.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="za.ac.cput.interfaces" />
+      <option name="MAIN_CLASS_NAME" value="za.ac.cput.interfaces.CustomerOrderRepositoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerOrderRepositoryTest.c_update" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CoffeeSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="za.ac.cput.interfaces.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="za.ac.cput.interfaces" />
+      <option name="MAIN_CLASS_NAME" value="za.ac.cput.interfaces.CustomerOrderRepositoryTest" />
+      <option name="METHOD_NAME" value="c_update" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -174,11 +161,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CustomerOrderFactoryTest.createCustomerOrder" />
+        <item itemvalue="JUnit.CustomerOrderRepositoryTest.c_update" />
+        <item itemvalue="JUnit.CustomerOrderRepositoryTest" />
         <item itemvalue="JUnit.CustomerOrderFactoryTest" />
-        <item itemvalue="JUnit.CustomerFactoryTest" />
-        <item itemvalue="JUnit.CustomerFactoryTest.testEmptyParameter" />
-        <item itemvalue="JUnit.CustomerOrderFactoryTest.testEmptyParameter" />
+        <item itemvalue="JUnit.CustomerOrderFactoryTest.testInvalidParameter" />
+        <item itemvalue="JUnit.CustomerOrderFactoryTest.testEmptyParameter3" />
       </list>
     </recent_temporary>
   </component>
@@ -201,7 +188,9 @@
       <workItem from="1679556428211" duration="9854000" />
       <workItem from="1679566482535" duration="1838000" />
       <workItem from="1679574165331" duration="62000" />
-      <workItem from="1679652733211" duration="163000" />
+      <workItem from="1679652733211" duration="4357000" />
+      <workItem from="1679658471640" duration="614000" />
+      <workItem from="1679829424519" duration="1679000" />
     </task>
     <task id="LOCAL-00001" summary="Coffee System v0.0.0 - Base code&#10;This is the Coffee System layout with just the main, xmls and folders to begin on development of our coffee system for 2023. Ensure all naming conventions are camelCase and that all files and additional folders are named correctly.">
       <created>1679055180959</created>
@@ -245,7 +234,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679324519902</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Testing&#10;&#10;All Repositories for Customer and CustomerOrder has been added. Also a base repository has been added.">
+      <created>1679653191961</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1679653191961</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -268,6 +264,25 @@
     <MESSAGE value="This is all entities and relevant attributes along with builder patterns for the relevant entities." />
     <MESSAGE value="Coffee System v0.0.3 - Helper and Factory&#10;&#10;All Factory and Helper classes have been updated to correct any invalid entries. All methods for validation are stored in the Helper classes. All building and restrictions to the entries are placed within the Factory classes." />
     <MESSAGE value="Coffee System v0.1.4 - Repository&#10;&#10;All Repositories for Customer and CustomerOrder has been added. Also a base repository has been added." />
-    <option name="LAST_COMMIT_MESSAGE" value="Coffee System v0.1.4 - Repository&#10;&#10;All Repositories for Customer and CustomerOrder has been added. Also a base repository has been added." />
+    <MESSAGE value="Testing&#10;&#10;All Repositories for Customer and CustomerOrder has been added. Also a base repository has been added." />
+    <option name="LAST_COMMIT_MESSAGE" value="Testing&#10;&#10;All Repositories for Customer and CustomerOrder has been added. Also a base repository has been added." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="4" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/CoffeeSystem$CustomerOrderFactoryTest.ic" NAME="CustomerOrderFactoryTest Coverage Results" MODIFIED="1679654102165" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>za.ac.cput.factory.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/CoffeeSystem$CustomerOrderFactoryTest_createCustomerOrder.ic" NAME="CustomerOrderFactoryTest.createCustomerOrder Coverage Results" MODIFIED="1679654340300" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>za.ac.cput.factory.*</FILTER>
+    </SUITE>
   </component>
 </project>

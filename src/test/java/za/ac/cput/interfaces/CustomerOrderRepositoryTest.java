@@ -16,7 +16,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class CustomerOrderRepositoryTest {
 
     private static CustomerOrderRepository repository = CustomerOrderRepository.getRepository();
-    private static CustomerOrder customerOrder = CustomerOrderFactory.buildCustomerOrder("Coffee with milk and cookie", "23-03-2023", "Card", 25.50);
+    private static CustomerOrder customerOrder = CustomerOrderFactory.buildCustomerOrder("Coffee with milk and cookie", "28-02-2023", "Card", 25.50);
 
     @Test
     void a_create() {
@@ -36,6 +36,7 @@ class CustomerOrderRepositoryTest {
     void c_update() {
         CustomerOrder updated = new CustomerOrder.Builder().copy(customerOrder)
                 .setOrderDescription("Coffee with milk")
+                .setPaymentMethod("Cash")
                 .setTotalPrice(12.50)
                 .build();
         assertNotNull(repository.update(updated));

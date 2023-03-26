@@ -9,11 +9,11 @@ import java.util.*;
 public class CustomerOrderFactory {
     public static CustomerOrder buildCustomerOrder(String orderDescription, String dateOfOrder, String paymentMethod, Double totalPrice) {
 
-        if (CustomerOrderHelper.isNullOrEmpty(orderDescription) == true || CustomerOrderHelper.isNullOrEmpty(paymentMethod) == true || CustomerOrderHelper.isInvalidDouble(totalPrice)) {
+        if (CustomerOrderHelper.isNullOrEmpty(orderDescription) == true || CustomerOrderHelper.isNullOrEmpty(paymentMethod) == true || CustomerOrderHelper.isInvalidDouble(totalPrice) == true) {
             return null;
         }
 
-        if(CustomerOrderHelper.isValidDate(dateOfOrder) == null){
+        if (CustomerOrderHelper.isValidDate(dateOfOrder) == null) {
             return null;
         }
 
@@ -21,7 +21,8 @@ public class CustomerOrderFactory {
 
         String orderID = CustomerOrderHelper.generateId();
 
-        return new CustomerOrder.Builder().setOrderID(orderID)
+        return new CustomerOrder.Builder()
+                .setOrderID(orderID)
                 .setOrderDescription(orderDescription)
                 .setDateOfOrder(dateOfOrder)
                 .setPaymentMethod(paymentMethod)

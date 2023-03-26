@@ -19,7 +19,8 @@ public class CustomerFactory {
 
         String customerID = CustomerHelper.generateId();
 
-        return new Customer.Builder().setCustomerID(customerID)
+        return new Customer.Builder()
+                .setCustomerID(customerID)
                 .setFirstName(firstName)
                 .setLastName(lastName)
                 .setPhoneNumber(phoneNumber)
