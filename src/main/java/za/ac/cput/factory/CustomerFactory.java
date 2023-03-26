@@ -1,23 +1,23 @@
 package za.ac.cput.factory;
 
 import za.ac.cput.domain.Customer;
-import za.ac.cput.util.CustomerHelper;
+import za.ac.cput.util.Helper;
 
 public class CustomerFactory {
     public static Customer buildCustomer(String firstName, String lastName, String phoneNumber, String email){
-        if(CustomerHelper.isNullOrEmpty(firstName) == true || CustomerHelper.isNullOrEmpty(lastName) == true) {
+        if(Helper.isNullOrEmpty(firstName) == true || Helper.isNullOrEmpty(lastName) == true) {
             return null;
         }
 
-        if(!CustomerHelper.isValidEmail(email)){
+        if(!Helper.isValidEmail(email)){
             return null;
         }
 
-        if(!CustomerHelper.isValidPhoneNumber(phoneNumber)){
+        if(!Helper.isValidPhoneNumber(phoneNumber)){
             return null;
         }
 
-        String customerID = CustomerHelper.generateId();
+        String customerID = Helper.generateId();
 
         return new Customer.Builder()
                 .setCustomerID(customerID)

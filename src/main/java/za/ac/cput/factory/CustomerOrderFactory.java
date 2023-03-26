@@ -1,25 +1,22 @@
 package za.ac.cput.factory;
 
 import za.ac.cput.domain.CustomerOrder;
-import za.ac.cput.util.CustomerHelper;
-import za.ac.cput.util.CustomerOrderHelper;
-
-import java.util.*;
+import za.ac.cput.util.Helper;
 
 public class CustomerOrderFactory {
     public static CustomerOrder buildCustomerOrder(String orderDescription, String dateOfOrder, String paymentMethod, Double totalPrice) {
 
-        if (CustomerOrderHelper.isNullOrEmpty(orderDescription) == true || CustomerOrderHelper.isNullOrEmpty(paymentMethod) == true || CustomerOrderHelper.isInvalidDouble(totalPrice) == true) {
+        if (Helper.isNullOrEmpty(orderDescription) == true || Helper.isNullOrEmpty(paymentMethod) == true || Helper.isInvalidDouble(totalPrice) == true) {
             return null;
         }
 
-        if (CustomerOrderHelper.isValidDate(dateOfOrder) == null) {
+        if (Helper.isValidDate(dateOfOrder) == null) {
             return null;
         }
 
-        String customerID = CustomerHelper.generateId();
+        String customerID = Helper.generateId();
 
-        String orderID = CustomerOrderHelper.generateId();
+        String orderID = Helper.generateId();
 
         return new CustomerOrder.Builder()
                 .setOrderID(orderID)

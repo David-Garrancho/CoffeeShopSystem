@@ -1,21 +1,40 @@
 package za.ac.cput.util;
 
-/* CustomerOrderHelper.java
-Helper Class for the CustomerOrderFactory
+/* CustomerHelper.java
+Helper Class for the CustomerFactory
 Author: David Henriques Garrancho (221475982)
 Date: 20 March 2023
 */
 
-import java.time.*;
-import java.time.format.*;
-import java.util.*;
+import org.apache.commons.validator.routines.EmailValidator;
 
-public class CustomerOrderHelper {
-    public static boolean isNullOrEmpty(String str) {
-        if (str == null || str.isEmpty()) {
+import java.time.LocalDate;
+import java.time.Month;
+import java.time.format.DateTimeFormatter;
+import java.time.format.DateTimeFormatterBuilder;
+import java.time.format.DateTimeParseException;
+import java.time.format.ResolverStyle;
+import java.util.UUID;
+import java.util.regex.*;
+
+public class Helper {
+
+    public static boolean isNullOrEmpty(String str){
+        if (str == null || str.isEmpty()){
             return true;
         }
         return false;
+    }
+
+    public static boolean isValidEmail(String email) {
+        EmailValidator ev = EmailValidator.getInstance();
+        return ev.isValid(email);
+    }
+
+    public static boolean isValidPhoneNumber(String phoneNumber){
+        Pattern phoneNumberPattern = Pattern.compile("^\\d{10}$");
+        Matcher findAMatch = phoneNumberPattern.matcher(phoneNumber);
+        return (findAMatch.matches());
     }
 
     public static boolean isInvalidDouble(Double d) {
